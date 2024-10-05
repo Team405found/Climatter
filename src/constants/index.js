@@ -126,7 +126,7 @@ import level6 from '../assets/map/6.jpg';
       title: "Journey",
       text: "JOURNEY THROUGH TIME DELVING INTO THE HISTORY OF CLIMATE CHANGE AND ITS PROFOUND EFFECTS ON OUR PLANET",
       backgroundUrl: "assets/benefits/card-1.svg",
-      url:"Map",
+      url:"/Map",
       iconUrl: benefitIcon1,
       imageUrl: benefitImage2,
     },
