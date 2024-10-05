@@ -1,0 +1,42 @@
+#postindus {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 20px;
+  padding: 0;
+  align-items: center; /* Center align the entire content */
+  outline: none; /* Ensure the container can be focused */
+}
+
+.postindus-content {
+  display: flex;
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+  width: 100%; /* Full width */
+  margin-bottom: 20px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column; /* Stack text vertically */
+  align-items: center; /* Center align the text */
+  padding: 0 20px; /* Add padding between arrows and text */
+}
+
+#postindus .phyto-name {
+  font-size: 3.5em;
+  font-family: 'Poppins';
+  text-align: center;
+  margin: 0 10px;
+}
+
+#postindus .phyto-desc {
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0; /* Add vertical spacing between descriptions */
+}
+
+.arrow-button {
+  color: black; /* Customize the arrow button colors here */
+}

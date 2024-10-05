@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: #051215;
+}
+
+.map-wrapper {
+    display: flex;
+    justify-content: space-between; /* Spread the title box and cards */
+    max-width: 1200px;  /* Set a max-width to control the size */
+    width: 100%; /* Ensure it takes full width */
+    margin-top: 5rem;
+    gap: 20px; /* Gap between title box and card container */
+    align-items: flex-start; /* Align items to the top of the container */
+}
+
+.title-box {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 1rem;
+    width: 350px; 
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; 
+    border-radius: 8px;
+    margin-top: 250px;
+    margin-left: -140px
+}
+.title-box h3 {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+     /* Spacing between titles */
+}
+
+.card_container {
+    display: flex;
+    gap: 1.25rem;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: stretch;
+    height: 80vh; /* Set a fixed height for the container */
+    transition: all 0.4s ease-in-out;
+}
+
+
+.expandable-card {
+    flex: 1;
+    transition: flex 0.4s ease-in-out, transform 0.4s ease-in-out;
+    position: relative;
+    height: 100%; /* Ensure each card takes full container height */
+}
+
+.expandable-card img {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 16px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.expandable-card:nth-child(odd) {
+    transform: translateY(-20px);
+}
+
+.expandable-card:nth-child(even) {
+    transform: translateY(20px);
+}
+
+.card_container .expandable-card:not(:hover) {
+    filter: grayscale(100%);
+}
+.card_container .expandable-card:hover ~ .title-box {
+    opacity: 1; /* Show title box when card is hovered */
+}
+.card_container .expandable-card:not(:hover) ~ .title-box {
+    background-color: #051215; /* Show title box when card is hovered */
+}
+
+.expandable-card:hover {
+    flex: 3;
+    transform: translateY(0);
+    filter: grayscale(0);
+}
