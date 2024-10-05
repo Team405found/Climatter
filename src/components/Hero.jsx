@@ -42,9 +42,12 @@ const Hero = () => {
           <Link to="/Map" style={{ marginRight: "100px" }}>
             <Button white>Start Journey</Button>
           </Link>
-          <Link to="https://team405found.github.io/dash/" style={{ marginLeft: "100px" }}>
-            <Button white >Analytics</Button>
-          </Link>
+          <a
+            href="https://team405found.github.io/dash/"
+            style={{ marginRight: "100px" }}
+          >
+            <Button white>Analytics</Button>
+          </a>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24 ">
           <div className=" relative z-1 p-0.5 rounded-2xl  bg-conic-gradient">
